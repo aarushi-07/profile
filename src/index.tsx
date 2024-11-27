@@ -1,15 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import Profile from "./Profile";
+import EducationHistory from "./EducationHistory";
+import {Footer, Header} from "./HeaderFooter";
+import WorkExperience from "./WorkExperience";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Profile />} />
+        <Route path="/work-experience" element={<WorkExperience />} />
+        <Route path="/education-history" element={<EducationHistory />} />
+        <Route path="*" element={<Profile />} />
+        </Routes>
+        <Footer />
+    </Router>
   </React.StrictMode>
 );
 

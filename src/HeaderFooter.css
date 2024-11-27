@@ -1,0 +1,121 @@
+/* Head NavBar */
+.head {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center;
+  background-color: #333;
+  padding: 0 20px;
+}
+
+/* Resume and Contact Us Buttons */
+.head .resume-btn, .head .contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.head .resume-btn:hover, .head .contact-btn:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.head .resume-btn i, .head .contact-btn i {
+  font-size: 20px;
+}
+
+/* Name */
+.name {
+  float: left;
+  font-size: 20px;
+  color: white;
+  margin-right: auto;
+}
+
+/* Logo (Icons) */
+.head .fa {
+  padding: 10px;
+  font-size: 20px; /* Adjusted icon font size */
+  width: 40px; /* Same as the button */
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 4px;
+  border-radius: 50%;
+}
+
+.head .fa-linkedin:hover {
+  background: #007bb5;
+  color: white;
+}
+
+.head .fa-github:hover {
+  background: black;
+  color: white;
+}
+
+.head .fa-linkedin, .head .fa-github {
+  background: white;
+  color: black;
+}
+
+/* ----END----- */
+
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+}
+
+.cright {
+  flex: 1;
+}
+
+.foot-logo {
+  flex: 1;
+}
+
+.bl {
+  background: #7a7a52;
+  color: #adad85;
+}
+
+.foot-logo .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 4px;
+  border-radius: 50%;
+}
+
+.foot-logo .fa-facebook:hover {
+  background: #3B5998;
+  color: white;
+}
+
+.foot-logo .fa-linkedin:hover {
+  background: #007bb5;
+  color: white;
+}
+
+.foot-logo .fa-github:hover {
+  background: black;
+  color: white;
+}
+
+.foot-logo .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+}

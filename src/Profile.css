@@ -1,0 +1,45 @@
+a {
+    text-decoration: none;
+}
+body {
+  background: linear-gradient(to right, #e0f7fa, #ffffff); /* Light gradient from light blue to white */
+  color: #333;
+}
+
+/* Photo  */
+
+.photo img {
+    width: 300px; /* Set a fixed width */
+    height: 300px;
+    margin: auto;
+}
+
+/* ----END-----*/
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid orange;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+/* Blinking caret */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
