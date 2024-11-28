@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router';
+import { HashRouter as Router, Routes, Route } from 'react-router';
 import Profile from "./Profile";
 import EducationHistory from "./EducationHistory";
 import {Footer, Header} from "./HeaderFooter";
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <HashRouter basename='/'>
+    <Router>
       <Header />
       <Routes >
         <Route path="/" element={<Profile />} />
@@ -22,7 +22,7 @@ root.render(
         {/*<Route path="*" element={<Profile />} />*/}
         </Routes>
         <Footer />
-    </HashRouter>
+    </Router>
   </React.StrictMode>
 );
 
