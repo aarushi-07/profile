@@ -13,9 +13,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/profile">
       <Header />
-      <Routes>
+      <Routes >
         <Route path="/" element={<Profile />} />
         <Route path="/work-experience" element={<WorkExperience />} />
         <Route path="/education-history" element={<EducationHistory />} />
