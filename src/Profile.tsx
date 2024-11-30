@@ -74,7 +74,6 @@ function Card({ imageSrc, altText, link, linkText }: CardProps) {
   );
 }
 
-// using link like this is not correct approach but it is the only way it is making it work
 function Cards() {
   return (
     <div className="container-fluid">
@@ -82,13 +81,13 @@ function Cards() {
         <Card
           imageSrc={work}
           altText="Work Experience"
-          link="profile/#/work-experience"
+          link="/work-experience"
           linkText="Work Experience"
         />
         <Card
           imageSrc={education}
           altText="Education"
-          link="profile/#/education-history"
+          link="/education-history"
           linkText="Education"
         />
       </div>
