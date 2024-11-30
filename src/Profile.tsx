@@ -2,6 +2,7 @@ import profilePhoto from './Asset/Images/IMG_4752.JPG';
 import work from './Asset/Images/work.png';
 import education from './Asset/Images/education.jpg';
 import React from "react";
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Profile.css';
 import './FlipCard.css';
 
@@ -64,7 +65,7 @@ function Card({ imageSrc, altText, link, linkText }: CardProps) {
           </div>
           <div className="flip-card-back">
             <div className="flip-text nosifer">
-              <a href={link}>{linkText}</a>
+              <Link to={link}>{linkText}</Link>
             </div>
           </div>
         </div>
