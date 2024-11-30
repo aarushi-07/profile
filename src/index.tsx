@@ -13,7 +13,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router basename="/profile">
+    {/*   basename="/profile" not working with Hashrouter, so updating Profile.tsx with actual path*/}
+    <Router>
       <Header />
       <Routes >
         <Route path="/" element={<Profile />} />
