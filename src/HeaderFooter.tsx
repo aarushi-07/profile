@@ -30,7 +30,7 @@ return (
             <i className="fa fa-envelope"></i>
         </button>
         <a
-            href="/Asset/PDF/AarushiBagri_resume.pdf"
+            href={`${process.env.PUBLIC_URL}/Asset/PDF/AarushiBagri_resume.pdf`}
             download
             className="resume-btn"
             title="Download Resume"
