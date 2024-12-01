@@ -40,7 +40,7 @@ function Introduction() {
                     <br/>
                     <span style={{display: "block"}}>
                     Around 3 years of professional experience working with several programming tools to
-deliver quality results lo clients. I am currently open to new challenges!
+deliver quality results to clients. I am currently open to new challenges!
                     </span>
                 </div>
             </div>
