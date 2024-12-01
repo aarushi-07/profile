@@ -30,7 +30,7 @@ return (
             <i className="fa fa-envelope"></i>
         </button>
         <a
-            href="../public/Asset/PDF/AarushiBagri_resume.pdf"
+            href="/Asset/PDF/AarushiBagri_resume.pdf"
             download
             className="resume-btn"
             title="Download Resume"
